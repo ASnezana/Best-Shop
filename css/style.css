@@ -78,7 +78,7 @@ body {
     line-height: 15px;
     letter-spacing: 3.28px;
     text-transform: uppercase;
-    color: var(--primary-color);
+    color: var(--color-grey);
 
 
     padding-top: 28px;
@@ -91,4 +91,59 @@ body {
 .header_menu_box a:hover {
     color: var(--color-black);
     border-bottom: 4px solid var(--primary-color);
+}
+
+
+
+
+
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.text-box h1 {
+    font-family: var(--primary-fonts);
+    color: var(--color-black);
+    font-size: 49px;
+    line-height: 57px;
+    text-transform: capitalize;
+
+    margin-top: 130px;
+}
+
+.text-box p {
+    font-family: var(--secondary-fonts);
+    color: var(--color-black);
+    font-size: 16px;
+    line-height: 22px;
+
+    margin-top: 20px;
+
+}
+
+.text-box button {
+    font-family: var(--secondary-fonts);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    background-color: var(--primary-color);
+    padding: 22px 157px 23px 157px;
+    margin-top: 38px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 40px;
+    border-style: none;
+
+    cursor: pointer;
+}
+
+.text-box button:hover {
+    color: var(--primary-color);
+    background-color: var(--color-white);
+    border: 2px solid var(--primary-color);
 }
