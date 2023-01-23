@@ -471,3 +471,195 @@ body {
     top:40px;
 }
 
+
+
+
+
+
+
+
+
+.fourth_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+
+    background-color: var(--color-white);
+
+}
+
+.fourth_section_all_boxes {
+    width: 1266px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.fourth_section h2 {
+    font-family: var(--primary-fonts);
+    font-size: 36px;
+    color: var(--color-black);
+    line-height: 42px;
+    text-align: center;
+
+    margin-top:100px;
+    margin-bottom: 70px;
+}
+
+
+.pricing_box {
+
+    padding-top:34px;
+    padding-bottom:61px;
+    border: 1px solid red;
+    border-radius: 18px;
+
+    text-align: center;
+    width: 372px;
+    height: 461px;
+
+    position: relative;
+
+}
+
+.pricing_box h3 {
+    font-family: var(--primary-fonts);
+    font-size: 20px;
+    font-weight: 700;
+
+    color: var(--color-black);
+
+    margin-top: 34px;
+    margin-bottom: 14px;
+}
+
+.pricing_box h4 {
+    font-family: var(--secondary-fonts);
+    font-size: 46px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.pricing_box h5 {
+    font-family: var(--primary-fonts);
+    font-size: 12px;
+    font-weight: 700;
+
+    color: var(--color-black);
+    margin-bottom: 50px;
+
+}
+
+.pricing_box p {
+    font-family: var(--secondary-fonts);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-black);
+    margin-bottom:20px;
+}
+
+.pricing_box a {
+    font-family:var(--secondary-fonts);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--color-white);
+    padding: 16px 57px 16px 57px;
+    border-radius: 23px;
+
+    position:relative;
+    bottom: -10%;
+}
+
+.fourth_section_first_box {
+    border-color: var(--color-redish);
+}
+
+.fourth_section_first_box h4 {
+    color: var(--color-redish);
+}
+
+.fourth_section_first_box a {
+    background-color: var(--color-redish);
+}
+
+.fourth_section_first_box p::before {
+    content: url("../assets/Ckechmark-1.svg");
+
+    position:relative;
+    left: -10px;
+
+}
+
+.fourth_section_first_box p:nth-child(n+7)::before {
+    content: url("../assets/Close.svg");
+
+    position:relative;
+    left: -10px;
+
+}
+
+
+
+
+.fourth_section_second_box {
+    border-color: var(--primary-color);
+    box-shadow: 5px 10px 27px #07ACE629;
+    scale: 110%
+}
+
+.fourth_section_second_box h4 {
+    color: var(--primary-color);
+}
+
+.fourth_section_second_box a {
+    background-color: var(--primary-color);
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+
+
+.fourth_section_second_box p::before {
+    content: url("../assets/Ckechmark-1.svg");
+
+    position:relative;
+    left: -10px;
+
+}
+
+.fourth_section_second_box p:last-of-type::before {
+    content: url("../assets/Close.svg");
+
+    position:relative;
+    left: -10px;
+
+}
+
+
+
+
+
+
+
+
+.fourth_section_third_box {
+    border-color: var(--color-green);
+}
+
+.fourth_section_third_box h4 {
+    color: var(--color-green);
+}
+
+.fourth_section_third_box a {
+    background-color: var(--color-green);
+}
+
+
+.fourth_section_third_box p::before {
+    content: url("../assets/Ckechmark-1.svg");
+
+    position:relative;
+    left: -10px;
+
+}
