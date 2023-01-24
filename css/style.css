@@ -145,7 +145,7 @@ body {
 .text-box button:hover {
     color: var(--primary-color);
     background-color: var(--color-white);
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 
@@ -861,4 +861,60 @@ label.checkbox {
     background-color: var(--color-white);
     border: 1px solid var(--primary-color);
     color:var(--primary-color);
+}
+
+
+
+
+
+
+
+.footer_background {
+    padding-top:20px;
+    padding-bottom:17px;
+    margin-top:59px;
+    box-shadow: 0 -5px 40px #00000029;
+}
+
+
+.footer_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_row_logo_box a {
+    font-family: var(--primary-fonts);
+    font-weight: 300;
+    font-size:26px;
+    line-height: 30px;
+    color: var(--primary-color);
+
+    cursor: pointer;
+
+}
+
+.footer_row_logo_box a:hover {
+    color: var(--color-black);
+}
+
+
+.footer_row_logo_box p {
+    font-family: var(--secondary-fonts);
+    font-size: 11px;
+    line-height: 15px;
+    color:var(--color-grey);
+    font-weight: 400;
+    margin-top:6.52px;
+}
+
+
+.footer_row_socialMedia_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_row_socialMedia_box a {
+    margin-left:20px;
 }
