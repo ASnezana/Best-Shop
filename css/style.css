@@ -585,6 +585,12 @@ body {
     background-color: var(--color-redish);
 }
 
+.fourth_section_first_box_btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-redish);
+    border:1px solid var(--color-redish);
+}
+
 .fourth_section_first_box p::before {
     content: url("../assets/Ckechmark-1.svg");
 
@@ -617,6 +623,12 @@ body {
 .fourth_section_second_box a {
     background-color: var(--primary-color);
     box-shadow: 5px 10px 14px #07ACE629;
+}
+
+.fourth_section_second_box_btn:hover {
+    background-color: var(--color-white);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 
@@ -655,6 +667,12 @@ body {
     background-color: var(--color-green);
 }
 
+.fourth_section_third_box_btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+}
+
 
 .fourth_section_third_box p::before {
     content: url("../assets/Ckechmark-1.svg");
@@ -662,4 +680,185 @@ body {
     position:relative;
     left: -10px;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+.fifth_section {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.fifth_section_boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width:896px;
+
+}
+
+.fifth_section_boxes_first_box {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    align-self: self-start;
+    width:50%;
+}
+
+.fifth_section_boxes_first_box h2 {
+    font-family: var(--primary-fonts);
+    color: var(--color-black);
+    font-size: 49px;
+    line-height: 57px;
+
+
+    margin-bottom: 22px;
+}
+
+.fifth_section_boxes_first_box p {
+    font-family: var(--secondary-fonts);
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-black);
+
+
+}
+
+.fifth_section_boxes_first_box_ContactData p {
+    font-family: var(--secondary-fonts);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: var(--color-grey);
+    margin-right: 22px;
+}
+
+.fifth_section_boxes_first_box_ContactData {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 42px;
+}
+
+.fifth_section_boxes_first_box_ContactData img {
+    margin-right:10px;
+}
+
+.fifth_section_boxes_second_box {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    width:50%;
+}
+
+.fifth_section_boxes_second_box label {
+    font-family: var(--secondary-fonts);
+    font-weight: 700;
+    text-transform: uppercase;
+    color:var(--primary-color);
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+}
+
+.name , .e-mail {
+    border-top: 0;
+    border-right: 0;
+    border-bottom:  1px  solid var(--color-grey);
+    border-left:0;
+    width:440px;
+    height: 50px;
+
+    outline: none;
+}
+
+.name:focus , .e-mail:focus {
+    border-bottom:  1px  solid var(--primary-color);
+}
+
+label.checkbox {
+    font-family: var(--secondary-fonts);
+    font-size: 12px;
+    line-height: 17px;
+    color:var(--color-grey);
+
+    letter-spacing: normal;
+    font-weight: 400;
+    text-transform: none;
+
+    margin-top:30px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox input {
+    width:0;
+    height: 0;
+    position: absolute;
+    display: flex;
+
+    cursor: pointer;
+}
+
+.checkbox span {
+    height: 24px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    margin-top:30px;
+    margin-right: 16px;
+
+
+}
+
+.checkbox input:checked + span {
+    background-image: url("../assets/Checkmark.svg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.fifth_section_btn {
+    color: var(--color-white);
+    font-family: var(--secondary-fonts);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 17px;
+    background-color: var(--primary-color);
+    border-radius: 35px;
+    border: none;
+    box-shadow:5px 10px 14px #07ACE629;
+
+    align-self: self-end;
+
+    padding: 20px 97px 19px 97px;
+    margin-top:20px;
+
+}
+
+.fifth_section_btn:hover {
+    background-color: var(--color-white);
+    border: 1px solid var(--primary-color);
+    color:var(--primary-color);
 }
