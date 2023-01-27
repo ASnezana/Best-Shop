@@ -22,7 +22,7 @@
 
 
 body {
-    width: 100vw;
+
     position: relative;
 }
 
@@ -34,6 +34,7 @@ body {
 
 }
 .header_background {
+    height: 70px;
     box-shadow: 0 3px 6px #00000029;
     opacity: 1;
 }
@@ -48,7 +49,6 @@ body {
 .header_menu_box {
     display: flex;
     flex-direction: row;
-
 }
 
 .header_logo_box {
@@ -62,8 +62,8 @@ body {
     font-weight: 300;
     font-size:32px;
     color: var(--primary-color);
-
     cursor: pointer;
+    border-bottom: 4px solid transparent;
 
 }
 
@@ -79,7 +79,7 @@ body {
     letter-spacing: 3.28px;
     text-transform: uppercase;
     color: var(--color-grey);
-
+    border-bottom: 4px solid transparent;
 
     padding-top: 28px;
     padding-bottom: 27px;
@@ -93,16 +93,16 @@ body {
     border-bottom: 4px solid var(--primary-color);
 }
 
-
-
-
-
+.first_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .text-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .text-box h1 {
@@ -144,16 +144,13 @@ body {
 
 .text-box button:hover {
     color: var(--primary-color);
-    background-color: var(--color-white);
-    border: 1px solid var(--primary-color);
+    background-color: var(--color-light-grey);
 }
 
-
-
-
-
-
-
+.background-box {
+    width: 100%;
+    height: auto;
+}
 
 
 .second_section {
@@ -172,8 +169,6 @@ body {
     margin-top: 100px;
 }
 
-
-
 .second_section_boxes {
     display: flex;
     flex-direction: row;
@@ -189,7 +184,6 @@ body {
     align-items: center;
     position: absolute;
 }
-
 
 .box {
     display: flex;
@@ -262,12 +256,6 @@ body {
     margin-top: 19px;
 }
 
-
-
-
-
-
-
 .third_section {
     display: flex;
     flex-direction: column;
@@ -300,9 +288,6 @@ body {
     margin-bottom: 50px
 }
 
-
-
-
 .third_section_first_box {
     margin-top: 105px;
     margin-bottom: 37px;
@@ -312,7 +297,6 @@ body {
     flex-direction: row;
 }
 
-
 .third_section_second_box {
     margin-bottom: 37px;
     display: flex;
@@ -321,17 +305,10 @@ body {
     position: relative;
 }
 
-
-
-
-
 .first_box_A {
     margin-top:91px;
     margin-left: 36px;
-
 }
-
-
 
 .first_box_A p {
     font-family: var(--primary-fonts);
@@ -402,10 +379,6 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-
-
-
-
     padding-top:12px;
     padding-bottom: 13px;
 }
@@ -417,18 +390,12 @@ body {
     border-style: none;
 }
 
-
-
-
 .third_section_third_box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--color-light-grey);
 }
-
-
-
 
 .third_box_A {
     padding-left: 35px;
@@ -471,21 +438,11 @@ body {
     top:40px;
 }
 
-
-
-
-
-
-
-
-
 .fourth_section {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    width: 100vw;
-
+    width: 100%;
     background-color: var(--color-white);
 
 }
@@ -540,7 +497,7 @@ body {
     font-family: var(--secondary-fonts);
     font-size: 46px;
     font-weight: 300;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .pricing_box h5 {
@@ -637,7 +594,6 @@ body {
 
     position:relative;
     left: -10px;
-
 }
 
 .fourth_section_second_box p:last-of-type::before {
@@ -645,15 +601,7 @@ body {
 
     position:relative;
     left: -10px;
-
 }
-
-
-
-
-
-
-
 
 .fourth_section_third_box {
     border-color: var(--color-green);
@@ -673,24 +621,11 @@ body {
     border: 1px solid var(--color-green);
 }
 
-
 .fourth_section_third_box p::before {
     content: url("../assets/Ckechmark-1.svg");
-
     position:relative;
     left: -10px;
-
 }
-
-
-
-
-
-
-
-
-
-
 
 .fifth_section {
     margin-top: 200px;
@@ -703,9 +638,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     width:896px;
-
 }
 
 .fifth_section_boxes_first_box {
@@ -714,6 +647,7 @@ body {
     align-items:flex-start;
     align-self: self-start;
     width:50%;
+    margin-top:42px;
 }
 
 .fifth_section_boxes_first_box h2 {
@@ -721,8 +655,6 @@ body {
     color: var(--color-black);
     font-size: 49px;
     line-height: 57px;
-
-
     margin-bottom: 22px;
 }
 
@@ -731,8 +663,6 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: var(--color-black);
-
-
 }
 
 .fifth_section_boxes_first_box_ContactData p {
@@ -749,7 +679,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     margin-top: 42px;
 }
 
@@ -782,8 +711,10 @@ body {
     border-left:0;
     width:440px;
     height: 50px;
-
     outline: none;
+}
+label {
+    margin-top:42px;
 }
 
 .name:focus , .e-mail:focus {
@@ -795,11 +726,9 @@ label.checkbox {
     font-size: 12px;
     line-height: 17px;
     color:var(--color-grey);
-
     letter-spacing: normal;
     font-weight: 400;
     text-transform: none;
-
     margin-top:30px;
 }
 
@@ -813,7 +742,6 @@ label.checkbox {
     height: 0;
     position: absolute;
     display: flex;
-
     cursor: pointer;
 }
 
@@ -827,13 +755,10 @@ label.checkbox {
     position: relative;
     margin-top:30px;
     margin-right: 16px;
-
-
 }
 
 .checkbox input:checked + span {
     background-image: url("../assets/Checkmark.svg");
-
     background-repeat: no-repeat;
     background-position: center;
 
@@ -849,33 +774,25 @@ label.checkbox {
     border-radius: 35px;
     border: none;
     box-shadow:5px 10px 14px #07ACE629;
-
     align-self: self-end;
-
     padding: 20px 97px 19px 97px;
     margin-top:20px;
-
 }
 
 .fifth_section_btn:hover {
-    background-color: var(--color-white);
-    border: 1px solid var(--primary-color);
+    background-color: var(--color-light-grey);
+
     color:var(--primary-color);
+
 }
-
-
-
-
-
-
 
 .footer_background {
     padding-top:20px;
     padding-bottom:17px;
     margin-top:59px;
     box-shadow: 0 -5px 40px #00000029;
+    height: 89px;
 }
-
 
 .footer_row {
     display: flex;
@@ -889,9 +806,7 @@ label.checkbox {
     font-size:26px;
     line-height: 30px;
     color: var(--primary-color);
-
     cursor: pointer;
-
 }
 
 .footer_row_logo_box a:hover {
