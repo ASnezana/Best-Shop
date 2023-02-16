@@ -345,6 +345,7 @@ body {
     transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
     position:absolute;
     translate:  480px 70px;
+
     z-index: 1;
 }
 
