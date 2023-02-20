@@ -1,0 +1,52 @@
+@import "../settings/mixins";
+
+.fifth_section {
+  @include mobile {
+    margin-top: 0;
+  }
+}
+
+
+
+.fifth_section_boxes {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    scale:0.8;
+    width: 100%;
+    height: auto;
+    .fifth_section_boxes_first_box {
+      margin-top: 0;
+    }
+
+
+  }
+}
+.fifth_section_boxes_second_box {
+  @include mobile {
+    width: auto;
+    padding: 15px;
+    margin-top: 70px;
+    .checkbox {
+      width: 50%
+    }
+  }
+}
+    .fifth_section_boxes_first_box_ContactData {
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .mail {
+          margin-top :15px;
+          margin-bottom: 20px;
+        }
+        .phone {
+          margin-left: 0;
+        }
+      }
+    }
+
+
+

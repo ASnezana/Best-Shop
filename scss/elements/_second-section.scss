@@ -1,0 +1,19 @@
+@import "../settings/mixins";
+
+.second_section h2 {
+  @include mobile {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+.second_section_boxes {
+  @include mobile {
+     display: block;
+
+
+  }
+}

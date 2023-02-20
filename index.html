@@ -15,6 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="scss/main.scss" />
@@ -34,10 +36,27 @@
           </nav>
 
           <nav class="header_menu_box">
-              <a href="#section_two">Why Us</a>
-              <a href="#section_three">Benefits</a>
-              <a href="#section_four">Prices</a>
-              <a href="#section_five">Contact</a>
+              <div class="nav-mobile">
+              <input id="menu-checkbox" type="checkbox">
+              <label for="menu-checkbox">
+                  <span class="nav-mobile-hamburger flex-center"><i class="fa-solid fa-bars"></i></span>
+                  <span class="nav-mobile-hamburgerX flex-center"><i class="fa-solid fa-xmark"></i></span>
+              </label>
+              <ul class="links">
+              <li><a href="#section_two">Why Us</a></li>
+              <li><a href="#section_three">Benefits</a></li>
+              <li><a href="#section_four">Prices</a></li>
+              <li><a href="#section_five">Contact</a></li>
+              </ul>
+              </div>
+              <div class="nav-desktop">
+                  <ul class="links">
+                      <li><a href="#section_two">Why Us</a></li>
+                      <li><a href="#section_three">Benefits</a></li>
+                      <li><a href="#section_four">Prices</a></li>
+                      <li><a href="#section_five">Contact</a></li>
+                  </ul>
+              </div>
           </nav>
 
         </section>
@@ -175,47 +194,60 @@
 
         <section class="fourth_section_all_boxes">
         <article class="fourth_section_first_box    pricing_box">
+            <div class="mobile-row">
+                <div class="mobile-left">
             <h3>Basic</h3>
             <h4>$0</h4>
             <h5>&nbsp;</h5>
-
+                </div>
+                <div class="mobile-right">
             <p>100 MB HDD</p>
             <p>1 Subdomain</p>
             <p>2 E-mails</p>
             <p>Two years license</p>
             <p>Full support</p>
+                </div>
+            </div>
 
             <a class="fourth_section_first_box_btn    pricing_btn"  href="#section_one">Begin</a>
         </article>
 
 
         <article class="fourth_section_second_box   pricing_box">
+            <div class="mobile-row">
+                <div class="mobile-left">
             <h3>Professional</h3>
             <h4>$25</h4>
             <h5>Limited offer</h5>
-
+                </div>
+                <div class="mobile-right">
             <p>500 MB HDD</p>
             <p>2 Subdomains</p>
             <p>5 E-mails</p>
             <p>One year license</p>
             <p>Full support</p>
-
+                </div>
+            </div>
             <a class="fourth_section_second_box_btn    pricing_btn"   href="#section_one">Begin</a>
         </article>
 
 
 
         <article class="fourth_section_third_box    pricing_box">
+            <div class="mobile-row">
+                <div class="mobile-left">
             <h3>Premium</h3>
             <h4>$60</h4>
             <h5>Limited offer</h5>
-
+                </div>
+                <div class="mobile-right">
             <p>2 GB HDD</p>
             <p>5 Subdomains</p>
             <p>20 E-mails</p>
             <p>Two years license</p>
             <p>Full support</p>
-
+                </div>
+            </div>
             <a class="fourth_section_third_box_btn    pricing_btn"   href="#section_one">Begin</a>
         </article>
         </section>
@@ -242,10 +274,13 @@
                 <h2>Any questions?</h2>
                 <p>Leave your email address or call us!</p>
                 <article class="fifth_section_boxes_first_box_ContactData">
-                    <img src="./assets/Mail Icon.svg"  alt="mail icon">
-                    <p>info@bestshop.xyz</p>
-                    <img src="./assets/Phone%20Icon.svg"  alt="phone icon">
-                    <p>123 456 789</p>
+                    <div class="mail">
+                      <img src="./assets/Mail Icon.svg"  alt="mail icon"><p>info@bestshop.xyz</p>
+                    </div>
+                    <div class="phone">
+                      <img src="./assets/Phone%20Icon.svg"  alt="phone icon">
+                      <p>123 456 789</p>
+                    </div>
                 </article>
 
             </section>

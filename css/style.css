@@ -29,6 +29,7 @@ body {
 .container {
     max-width: 1352px;
     margin: 0 auto;
+    padding:0 15px;
     position: relative;
     justify-content:center ;
 
@@ -51,6 +52,18 @@ body {
     flex-direction: row;
 }
 
+.nav-desktop .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-mobile {
+    visibility: hidden;
+}
+
 .header_logo_box {
     display: flex;
     justify-content: center;
@@ -71,7 +84,7 @@ body {
     color: var(--color-black);
 }
 
-.header_menu_box a {
+.header_menu_box .nav-desktop li  {
     font-family: var(--secondary-fonts);
     font-weight: 700;
     font-size: 11px;
@@ -87,8 +100,11 @@ body {
     margin-right: 45px;
 
 }
+.nav-desktop a {
+    color:var(--color-grey);
+}
 
-.header_menu_box a:hover {
+.header_menu_box .nav-desktop li:hover {
     color: var(--color-black);
     border-bottom: 4px solid var(--primary-color);
 }
@@ -342,7 +358,7 @@ body {
     height: 150px;
     border-radius: 41px;
     background-color: var(--color-redish);
-    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: rotate(45deg);
     position:absolute;
     translate:  480px 70px;
 
@@ -682,7 +698,10 @@ body {
     align-items: center;
     margin-top: 42px;
 }
-
+.mail , .phone {
+    display: flex;
+    flex-direction: row;
+}
 .fifth_section_boxes_first_box_ContactData img {
     margin-right:10px;
 }
@@ -715,8 +734,11 @@ body {
     outline: none;
 }
 label {
+
     margin-top:42px;
 }
+
+
 
 .name:focus , .e-mail:focus {
     border-bottom:  1px  solid var(--primary-color);

@@ -1,0 +1,15 @@
+// do 820 mobile
+
+@mixin mobile {
+  @media (max-width:820px) {
+    @content
+  }
+}
+
+
+
+@mixin desktop {
+  @media (min-width: 820px) {
+    @content;
+  }
+}
